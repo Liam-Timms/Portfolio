@@ -10565,7 +10565,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     color: #F60090;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1080px) {
 .icon-bar {
   position: fixed;
   top: 50%;
