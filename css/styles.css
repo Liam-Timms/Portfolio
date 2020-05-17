@@ -10121,7 +10121,7 @@ header.masthead {
   text-align: left;
   color: #fff;
   background-color: var(--dark-purple);
-  background-image: url(.../assets/img/portfolio/header.jpg);
+  background-image: url(header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
