@@ -32,6 +32,15 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --dark-purple: #160c28ff;
+  --royal-blue: #001f54ff;
+  --indigo-dye: #034078ff;
+  --safety-orange: #ff6700ff;
+  --portland-orange: #f46036ff;
+  --byzantium: #820263;
+  --lavender: #EEEEFF;
+  --light-purple: #2D243E;
+  --blush: #EA638C;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -57,6 +66,7 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+
 
 body {
   margin: 0;
@@ -86,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h5{
-    color: #F60090;
+    color: var(--blush);
 }
 
 p {
@@ -165,12 +175,12 @@ sup {
 }
 
 a {
-  color: #fed136;
+  color: var(--blush);
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #e6b301;
+  color: var(--blush);
   text-decoration: underline;
 }
 
@@ -2465,32 +2475,32 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #01A7EF;
-  border-color: #01A7EF;
+  background-color: var(--byzantium);
+  border-color: var(--byzantium);
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0071A2;
-  border-color: #0071A2;
+  background-color: var(--light-purple);
+  border-color: var(--light-purple);
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  background-color: var(--light-purple);
+  border-color: var(--light-purple);
+  box-shadow: 0 0 0 0.2rem var(--light-purple);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #0071A2;
-  border-color: #0071A2;
+  background-color: var(--light-purple);
+  border-color: var(--light-purple);
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0071A2;
-  border-color: #0071A2;
+  background-color: var(--light-purple);
+  border-color: var(--light-purple);
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  box-shadow: 0 0 0 0.2rem var(--light-purple));
 }
 
 .btn-secondary {
@@ -2905,7 +2915,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #fed136;
+  color: var(--blush);
   text-decoration: none;
 }
 .btn-link:hover {
@@ -6077,7 +6087,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #01A7EF !important;
+  background-color: var(--dark-purple) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9759,7 +9769,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #F60090 !important;
+  color: var(--byzantium) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9827,7 +9837,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: var(--lavender) !important;
 }
 
 .text-black-50 {
@@ -9977,7 +9987,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family:'Martel', serif;
-  color: #01A7EF;
+  color: #fff;
 }
 
 .page-section h3.section-subheading {
@@ -10036,7 +10046,7 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: var(--light-purple);
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10045,7 +10055,7 @@ img::-moz-selection {
   font-size: 0.75rem;
   color: #fff;
   text-transform: uppercase;
-  background-color: #F60090;
+  background-color: var(--byzantium);
   border: 0;
 }
 #mainNav .navbar-brand {
@@ -10067,7 +10077,7 @@ font-family: 'Baloo 2', cursive;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #01A7EF;
+  color: var(--blush);
 }
 
 @media (min-width: 992px) {
@@ -10110,13 +10120,12 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: left;
   color: #fff;
-  background-image: url("../assets/img/portfolio/laptop-technology-keyboard-keys-65543.jpg");
-    opacity: 80%
+  background-color: var(--dark-purple);
+  background-image: url(/assets/img/portfolio/header.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
   background-size: cover;
 }
+
 header.masthead .masthead-subheading {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -10294,7 +10303,7 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #F60090;
+  background-color: var(--byzantium);
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -10324,7 +10333,8 @@ header.masthead .masthead-heading {
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
-    font-size: 1rem
+  font-size: 1rem;
+  color: #fff;
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
@@ -10477,29 +10487,26 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
-.service-pink {
+.grow-hover {
   transition: all 0.4s;
   transition-timing-function: ease;
   padding: 10px;
   border-radius: 5%;
 }
 
-.service-pink:hover{
+.grow-hover:hover{
     transform: scale(1.05);
     vertical-align: middle;
     z-index: 1000;
 }
 
-#career-history{
-    background-color: #ffffff;
-}
 
 .white{
     color: #ffffff !important;
 }
 
 .navy{
-    color: #0071A2;
+    color: var(--royal-blue);
 }
 
 .footer {
@@ -10554,7 +10561,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .timeline-reveal{
     padding: 5px 0 5px 0;
     text-decoration: underline;
-    color: #F60090;
+    color: var(--blush);
 }
 
 .blue{
@@ -10565,7 +10572,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     color: #F60090;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 950px) {
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -10607,6 +10614,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     border-radius: 10px;
     padding: 30px;
     margin: 10px;
+    background-color: var(--byzantium);
 }
 
 .timeline-link{
@@ -10619,5 +10627,18 @@ section#contact form#contactForm :-ms-input-placeholder {
     }
 }
 
+.dark-background{
+    background-color: var(--dark-purple);
+}
 
-    
+.medium-background{
+    background-color: var(--light-purple);
+}
+
+.light-background{
+  background-color: var(--byzantium);
+}
+
+.shadow-box{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
